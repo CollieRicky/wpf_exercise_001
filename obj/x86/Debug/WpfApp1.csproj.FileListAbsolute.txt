@@ -31,3 +31,4 @@ D:\Studying\WPF\wpf_exercise_001\bin\x86\Debug\MahApps.Metro.IconPacks.Material.
 D:\Studying\WPF\wpf_exercise_001\bin\x86\Debug\MahApps.Metro.IconPacks.Material.xml
 D:\Studying\WPF\wpf_exercise_001\obj\x86\Debug\WpfApp1.csproj.CopyComplete
 D:\Studying\WPF\wpf_exercise_001\obj\x86\Debug\App.baml
+D:\Studying\WPF\wpf_exercise_001\obj\x86\Debug\WpfApp1.csproj.AssemblyReference.cache

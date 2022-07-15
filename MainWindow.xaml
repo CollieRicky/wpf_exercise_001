@@ -26,9 +26,92 @@
                     <Icon:PackIconMaterial Kind="Menu" Width="15" Height="15"/>
                 </Button>
 
-            </Grid>
-            
+                <Border Grid.Row="1" Background="#623ed0" CornerRadius="0 50 0 25">
+                    <!-- Menu Logo -->
+                    <DockPanel>
+                        <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
+                            DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="/Images/Collie.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        
+                        <!-- Menu Titles -->
+                        <TextBlock Text="Collie" Foreground="White" FontSize="22" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                        <TextBlock Text="Cryption Tool" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                        
+                        <!-- Menu Seprator -->
+                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
 
+                        <!-- Menu Buttons -->
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="CalendarClock" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Events"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}" Background="#7b5cd6" Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Members"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="CashMultiple" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Wallet"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="ForumOutline" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Messages"/>
+                                </StackPanel>
+                            </Button>
+
+
+                        </StackPanel>
+
+                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0 15 20">
+                            <StackPanel Orientation="Horizontal">
+                                <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Logout"/>
+                            </StackPanel>
+                        </Button>
+
+
+                    </DockPanel>
+                </Border>
+
+
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>                
+            </Grid>
 
 
 
